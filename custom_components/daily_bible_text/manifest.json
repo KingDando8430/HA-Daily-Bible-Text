@@ -1,0 +1,12 @@
+{
+  "domain": "daily_bible_text",
+  "name": "Daily Bible Text",
+  "version": "1.0.0",
+  "documentation": "https://github.com/KingDando8430/Daily-Bible-Text",
+  "issue_tracker": "https://github.com/KingDando8430/Daily-Bible-Text/issues",
+  "codeowners": [],
+  "requirements": [],
+  "dependencies": ["file_upload"],
+  "iot_class": "local_polling",
+  "config_flow": true
+}

@@ -1,0 +1,56 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Daily Bible Text – Einrichtung",
+        "description": "Lade deine EPUB-Datei hoch oder gib den Pfad zu einer vorhandenen Datei an.\n\nHochgeladene Dateien werden in `/config/daily_bible_text/` gespeichert.",
+        "data": {
+          "epub_file": "EPUB-Datei hochladen",
+          "epub_path": "EPUB-Dateipfad (Alternative zum Upload)",
+          "language": "Sprache",
+          "show_verse_reference": "Bibelstelle am Ende des Tagestexts anzeigen"
+        },
+        "data_description": {
+          "epub_file": "Datei per Drag & Drop oder Auswahl hochladen (.epub)",
+          "epub_path": "Vollständiger Pfad, z. B. `/config/daily_bible_text/tagestext.epub`"
+        }
+      }
+    },
+    "error": {
+      "file_not_found": "Datei nicht gefunden – bitte Dateipfad prüfen.",
+      "not_epub": "Die Datei muss die Endung .epub haben.",
+      "invalid_epub": "Die Datei konnte nicht als gültige EPUB-Datei gelesen werden.",
+      "upload_failed": "Hochladen fehlgeschlagen – bitte erneut versuchen.",
+      "no_epub_provided": "Bitte eine Datei hochladen oder einen Pfad angeben."
+    },
+    "abort": {
+      "already_configured": "Diese EPUB-Datei ist bereits konfiguriert."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Daily Bible Text – Einstellungen",
+        "description": "EPUB-Datei ersetzen oder Einstellungen ändern.",
+        "data": {
+          "epub_file": "Neue EPUB-Datei hochladen",
+          "epub_path": "EPUB-Dateipfad",
+          "language": "Sprache",
+          "show_verse_reference": "Bibelstelle am Ende des Tagestexts anzeigen"
+        }
+      }
+    },
+    "error": {
+      "file_not_found": "Datei nicht gefunden – bitte Pfad prüfen.",
+      "not_epub": "Die Datei muss die Endung .epub haben.",
+      "invalid_epub": "Die Datei konnte nicht als gültige EPUB-Datei gelesen werden.",
+      "upload_failed": "Hochladen fehlgeschlagen – bitte erneut versuchen."
+    }
+  },
+  "issues": {
+    "outdated_epub": {
+      "title": "Daily Bible Text – Veraltete EPUB-Datei ({epub_year})",
+      "description": "Die konfigurierte EPUB-Datei stammt aus dem Jahr **{epub_year}**, das aktuelle Jahr ist aber **{current_year}**. Die angezeigten Texte können falsch sein.\n\nBitte lade die EPUB-Datei für {current_year} über **Einstellungen → Integrationen → Daily Bible Text → Konfigurieren** hoch."
+    }
+  }
+}

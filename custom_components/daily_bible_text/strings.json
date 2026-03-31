@@ -1,0 +1,56 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Daily Bible Text – Setup",
+        "description": "Upload your EPUB file, or enter the path to an existing file.\n\nUploaded files are stored in `/config/daily_bible_text/`.",
+        "data": {
+          "epub_file": "Upload EPUB file",
+          "epub_path": "EPUB file path (alternative to upload)",
+          "language": "Language",
+          "show_verse_reference": "Show Bible reference at end of Scripture"
+        },
+        "data_description": {
+          "epub_file": "Drag & drop or browse your .epub file",
+          "epub_path": "Full path on server, e.g. /config/daily_bible_text/tagestext.epub"
+        }
+      }
+    },
+    "error": {
+      "file_not_found": "File not found – please check the path.",
+      "not_epub": "File must have a .epub extension.",
+      "invalid_epub": "The file could not be read as a valid EPUB.",
+      "upload_failed": "Upload failed – please try again.",
+      "no_epub_provided": "Please upload a file or enter a path."
+    },
+    "abort": {
+      "already_configured": "This EPUB is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Daily Bible Text – Options",
+        "description": "Replace the EPUB file or change settings.",
+        "data": {
+          "epub_file": "Upload new EPUB file",
+          "epub_path": "EPUB file path",
+          "language": "Language",
+          "show_verse_reference": "Show Bible reference at end of Scripture"
+        }
+      }
+    },
+    "error": {
+      "file_not_found": "File not found – please check the path.",
+      "not_epub": "File must have a .epub extension.",
+      "invalid_epub": "The file could not be read as a valid EPUB.",
+      "upload_failed": "Upload failed – please try again."
+    }
+  },
+  "issues": {
+    "outdated_epub": {
+      "title": "Daily Bible Text – Outdated EPUB ({epub_year})",
+      "description": "The configured EPUB is from **{epub_year}**, but the current year is **{current_year}**. The texts shown may be incorrect.\n\nPlease upload the EPUB for {current_year} via **Settings → Integrations → Daily Bible Text → Configure**."
+    }
+  }
+}

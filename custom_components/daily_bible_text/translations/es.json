@@ -1,0 +1,56 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Daily Bible Text – Configuración",
+        "description": "Sube tu archivo EPUB o introduce la ruta de un archivo existente.\n\nLos archivos subidos se guardan en `/config/daily_bible_text/`.",
+        "data": {
+          "epub_file": "Subir archivo EPUB",
+          "epub_path": "Ruta del archivo EPUB (alternativa a la subida)",
+          "language": "Idioma",
+          "show_verse_reference": "Mostrar referencia bíblica al final del Texto bíblico"
+        },
+        "data_description": {
+          "epub_file": "Arrastra o selecciona tu archivo .epub",
+          "epub_path": "Ruta completa, p.ej. /config/daily_bible_text/texto.epub"
+        }
+      }
+    },
+    "error": {
+      "file_not_found": "Archivo no encontrado – comprueba la ruta.",
+      "not_epub": "El archivo debe tener la extensión .epub.",
+      "invalid_epub": "No se pudo leer el archivo como EPUB válido.",
+      "upload_failed": "La subida falló – inténtalo de nuevo.",
+      "no_epub_provided": "Por favor sube un archivo o introduce una ruta."
+    },
+    "abort": {
+      "already_configured": "Este EPUB ya está configurado."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Daily Bible Text – Opciones",
+        "description": "Reemplaza el archivo EPUB o cambia la configuración.",
+        "data": {
+          "epub_file": "Subir nuevo archivo EPUB",
+          "epub_path": "Ruta del archivo EPUB",
+          "language": "Idioma",
+          "show_verse_reference": "Mostrar referencia bíblica al final del Texto bíblico"
+        }
+      }
+    },
+    "error": {
+      "file_not_found": "Archivo no encontrado – comprueba la ruta.",
+      "not_epub": "El archivo debe tener la extensión .epub.",
+      "invalid_epub": "No se pudo leer el archivo como EPUB válido.",
+      "upload_failed": "La subida falló – inténtalo de nuevo."
+    }
+  },
+  "issues": {
+    "outdated_epub": {
+      "title": "Daily Bible Text – EPUB desactualizado ({epub_year})",
+      "description": "El EPUB configurado es de **{epub_year}**, pero el año actual es **{current_year}**. Los textos mostrados pueden ser incorrectos.\n\nPor favor sube el EPUB de {current_year} en **Configuración → Integraciones → Daily Bible Text → Configurar**."
+    }
+  }
+}
