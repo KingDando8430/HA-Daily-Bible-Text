@@ -18,14 +18,23 @@ A fully offline Home Assistant custom integration that reads daily Bible verse e
 
 ## Installation
 
+### HACS (Recommended)
+1. Install Integration via HACS
+
+<a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=KingDando8430&repository=HA-Daily-Bible-Text&category=integration" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open your Home Assistant instance and open a repository inside the Home Assistant Community Store." /></a>
+
+2. Restart Home Assistant
+
+<a href="https://my.home-assistant.io/redirect/repairs/" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/repairs.svg" alt="Open your Home Assistant instance and show your repairs." /></a>
+
+3. Add integration to Home Assistant
+
+<a href="https://my.home-assistant.io/redirect/config_flow_start/?domain=daily_bible_text" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/config_flow_start.svg" alt="Open your Home Assistant instance and start setting up a new integration." /></a>
+
 ### Manual
 1. Copy the `custom_components/daily_bible_text/` folder to `/config/custom_components/`
 2. Restart Home Assistant
-3. 
-    <a href="https://my.home-assistant.io/redirect/integration/?domain=daily_bible_text" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/integration.svg" alt="Open your Home Assistant instance and show an integration." /></a>
-
-### HACS (Currently not available)
-Add this repository as a custom integration repository in HACS.
+3. Add integration to Home Assistant
 
 ## Setup
 
