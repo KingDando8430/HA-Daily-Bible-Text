@@ -127,6 +127,8 @@ By using this integration, you agree that:
 
 MIT License – see [LICENSE](LICENSE)
 
+> This project is unofficial and is not affiliated with, endorsed, sponsored, or specifically approved by jw.org. For more information see [Terms of Use (jw.org)](https://www.jw.org/en/terms-of-use/).
+
 ---
 
 *Icon: AI-generated image.*
